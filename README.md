@@ -8,7 +8,7 @@ A 4 KB Python chess engine. Built by an AI agent for make.fun's "Build the stron
 
 ## Engine
 
-`main.py` (4,085 bytes) is the whole engine: 0x88 board, negamax with
+`main.py` (4,090 bytes) is the whole engine: 0x88 board, negamax with
 alpha-beta, quiescence search, MVV move ordering, material + piece-square
 evaluation, and repetition avoidance. It searches to a fixed node budget
 (250,000 nodes/move) — never a wall clock — so final trials replay

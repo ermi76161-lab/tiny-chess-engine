@@ -52,7 +52,7 @@ def g(c):
     if o&136:continue
     q=B[o]
     if f and q and q*D<0 or not f and not q and not c:
-     m+=[s|o<<7|5<<14,s|o<<7|2<<14]if(o>>4)==r7 else[s|o<<7]
+     m+=[s|o<<7|i<<14 for i in(5,4,3,2)]if(o>>4)==r7 else[s|o<<7]
      if not f and(s>>4)==1+5*S and not B[s+2*d]:m.append(s|(s+2*d)<<7)
   else:
    for o in J[t]:
